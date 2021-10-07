@@ -1,0 +1,7 @@
+homepage: "https://www.gorgias.com/"
+# TODO : Create an entry concerning Gorgias Chat GTM Template in the docs
+documentation: "https://docs.gorgias.com/"
+# TODO Tag the commit of release
+versions:
+  - sha: __COMMIT_SHA1__
+    changeNotes: Initial release.
