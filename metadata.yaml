@@ -1,5 +1,5 @@
 homepage: "https://www.gorgias.com/"
 documentation: "https://docs.gorgias.com/gorgias-chat/chat-getting-started#setup_instructions_for_google_tag_manager"
 versions:
-  - sha: c65f782499883032d492f9333fb724f287351371
+  - sha: c257498038d265ef05274c7348a8f66afcdcd6cc
     changeNotes: Initial release.
