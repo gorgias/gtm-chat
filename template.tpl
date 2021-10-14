@@ -43,8 +43,9 @@ ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
 const log = require('logToConsole');
 const injectScript = require('injectScript');
+const encodeUriComponent = require('encodeUriComponent');
 
-const chatBundleLoaderUrl = 'https://config.gorgias.chat/gorgias-chat-bundle-loader.js?applicationId=' + data.gorgiasChatAppID;
+const chatBundleLoaderUrl = 'https://config.gorgias.chat/gorgias-chat-bundle-loader.js?applicationId=' + encodeUriComponent(data.gorgiasChatAppID);
 
 const onSuccess = () => {
   log('Gorgias chat : Successfully loaded');
@@ -117,6 +118,6 @@ scenarios: []
 
 ___NOTES___
 
-Created on 05/10/2021, 17:07:56
+Created on 14/10/2021, 10:41:24
 
 
