@@ -32,8 +32,8 @@ ___TEMPLATE_PARAMETERS___
 [
   {
     "type": "TEXT",
-    "name": "gorgiasChatAppID",
-    "displayName": "Gorgias Chat App ID",
+    "name": "gorgiasChatAppKey",
+    "displayName": "Gorgias Chat App Key",
     "simpleValueType": true
   }
 ]
@@ -47,7 +47,7 @@ const encodeUriComponent = require('encodeUriComponent');
 const getContainerVersion = require('getContainerVersion');
 
 const containerId = getContainerVersion().containerId;
-const chatBundleLoaderUrl = 'https://config.gorgias.chat/gorgias-chat-bundle-loader.js?applicationId=' + encodeUriComponent(data.gorgiasChatAppID) + '&GTMContainerId=' + encodeUriComponent(containerId);
+const chatBundleLoaderUrl = 'https://config.gorgias.chat/bundle-loader/' + encodeUriComponent(data.gorgiasChatAppKey) + '?GTMContainerId=' + encodeUriComponent(containerId);
 
 const onSuccess = () => {
   log('Gorgias chat : Successfully loaded');
