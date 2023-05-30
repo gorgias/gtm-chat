@@ -1,9 +1,11 @@
 homepage: "https://www.gorgias.com/"
-documentation: "https://docs.gorgias.com/gorgias-chat/chat-getting-started#setup_instructions_for_google_tag_manager"
+documentation: "https://docs.gorgias.com/en-US/chat-getting-started-81789#setup-instructions-for-google-tag-manager"
 versions:
   # Latest version
+  - sha: ea786b6baeaf96319fcd7a531b58c371b60dfa2f
+    changeNotes: Introduce the v3 snippet. Use app key instead of app id.
+  # Older versions
   - sha: ea253acc4d5844728c79de3412fe7259fcbf397d
     changeNotes: Add the containerId as query param to the bundle loader URL.
-  # Older versions
   - sha: c257498038d265ef05274c7348a8f66afcdcd6cc
     changeNotes: Initial release.
